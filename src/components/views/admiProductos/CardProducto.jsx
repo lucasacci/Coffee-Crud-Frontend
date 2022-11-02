@@ -28,6 +28,9 @@ const CardProducto = () => {
  
   return (
     <>
+
+
+    
       {productos.map((el, i) => {
         return (
           <Card key={el._id} className="m-4">
@@ -44,6 +47,7 @@ const CardProducto = () => {
           </Card>
         );
       })}
+ 
     </>
   );
 };
