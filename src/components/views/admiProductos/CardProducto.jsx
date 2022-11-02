@@ -35,9 +35,11 @@ const CardProducto = () => {
         return (
           <Card key={el._id} className="m-4">
             <Card.Img variant="top" src={el.imagen} className="img-fluid" />
-            <Card.Body>
+            <Card.Body className="align-items-end d-flex">
+              <div className="align-items-center">
               <Card.Title>{el.nombreProducto}</Card.Title>
               <Card.Text>Precio: ${el.precio}</Card.Text>
+              </div>
             </Card.Body>
             <Card.Footer>
               <Link className="btn btn-danger"  to={`/detalle-producto/${el._id}`}>
