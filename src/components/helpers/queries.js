@@ -32,7 +32,7 @@ export const obtenerProductoAPI = async(id)=>{
 }
 
 export const crearProductoAPI = async(producto)=>{
-    // console.log(URL)
+    console.log(URL)
     try {
         const respuesta = await fetch(URL,{
             method: "POST",
